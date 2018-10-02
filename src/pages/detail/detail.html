@@ -9,7 +9,7 @@
   <ion-navbar>
     <ion-title>detail</ion-title>  
     <ion-buttons right>
-      <button  (click)="connnCamera()" ion-button icon-only outline color = "dark">
+      <button  (click)="connCamera()" ion-button icon-only outline color = "dark">
         <ion-icon name="md-camera" large></ion-icon>
       </button>
     </ion-buttons>
@@ -19,6 +19,12 @@
 
 
 <ion-content padding>
+    <ion-item>
+        <ion-label fixed>Your Text</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="text"></ion-input>
+      </ion-item>
+
+     <button ion-button block (click)="textS()">Say Text</button>
   <ion-img [src]="a"></ion-img>
 
 </ion-content>
